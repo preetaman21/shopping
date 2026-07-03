@@ -14,8 +14,8 @@ const Product = ({ ListHeaderComponent }: { ListHeaderComponent?: React.ReactEle
         numColumns={2}   
         renderItem={({ item }) => (
           <Pressable className="flex-1 m-2" onPress={() => navigation.navigate('ProductDetail', { product: item })}>
-            <View className=" bg-pink-900 p-2 rounded-xl">
-              <Text className="text-lg text-white font-bold">{item.title}</Text>
+            <View className="bg-[#DEE6E9] p-2 rounded-xl">
+              <Text className="text-lg text-[#373d55] font-bold">{item.title}</Text>
 
               <View className="justify-center flex-row bg-white rounded-2xl mt-2">
                 <Image
@@ -25,12 +25,12 @@ const Product = ({ ListHeaderComponent }: { ListHeaderComponent?: React.ReactEle
                 />
               </View>
 
-              <Text className="text-md text-pink-200 font-semibold mt-3">
+              <Text className="text-md text-[#747d9e] font-semibold mt-3">
                 {item.description}
               </Text>
 
               <View className="flex-row justify-between mt-1">
-                <Text className="text-lg  text-yellow-100 font-extrabold">
+                <Text className="text-lg  text-[#0b3155] font-extrabold">
                   Rs. {item.price}
                 </Text>
                 <Text className="text-sm font-bold bg-green-700 px-2 rounded-xl text-white">

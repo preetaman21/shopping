@@ -22,7 +22,7 @@ const Categories = () => {
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }: any) => (
-          <View className="m-2 rounded-lg bg-pink-900 items-center py-3 flex flex-row px-3">
+          <View className="m-2 rounded-xl bg-[#526e8f] items-center py-3 flex flex-row px-3">
             <Ionicons name={item.icon} size={24} color="#fefce8" />
             <Text className="font-bold text-yellow-50 mt-1 text-center">{item.name}</Text>
           </View>

@@ -5,18 +5,18 @@ import Categories from 'components/Categories'
 
 const Home = ({navigation} : any) => {
   return (
-    <View className="flex-1">
-     <Products 
-       ListHeaderComponent={
+    <ScrollView>
          <View>
            <Categories/>
-           <Pressable onPress={() => (navigation.navigate('ProductDynamic'))} className="bg-pink-900 rounded-2xl m-4">
-             <Text className="text-pink-200 font-bold p-2"> Go to Dynamic Products</Text>
+           <View className="flex-row justify-center items-center bg-yellow-50 rounded-2xl m-4">
+           <Pressable onPress={() => (navigation.navigate('ProductDynamic'))} >
+             <Text className="text-[#7394bc] font-bold p-2"> Go to Dynamic Products</Text>
            </Pressable>
+           </View>
          </View>
-       }
-     />
-    </View>
+         
+        <Products/>
+    </ScrollView>
   )
 }
 

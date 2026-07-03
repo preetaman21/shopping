@@ -13,7 +13,7 @@ const ProductDetail = ({ route }: any) => {
           <Image source={{ uri: product.image }} className="my-5 h-96 w-64" />
         </View>
         <View className="flex flex-row justify-between p-2">
-          <Text className=" text-lg font-semibold">{product.description}</Text>
+          <Text className=" text-lg font-semibold text-[#001D39]">{product.description}</Text>
           <Ionicons name="heart-outline" size={24} color='black'/>
           <Ionicons name="share" size={24} color='black'/>
         </View>
@@ -21,7 +21,7 @@ const ProductDetail = ({ route }: any) => {
         {/* <Text className="text-sm font-bold bg-green-600 px-2 mt-2 rounded-xl text-white w-12 ml-4 p-1">{product.rating}</Text> */}
         <View className="bg-white mt-4">
           <Text className="text-xl font-bold mt-2 ml-4">Select Size</Text>
-          <Text className="bg-pink-200 border border-pink-700 rounded-full w-24 m-4 p-2">Free Size</Text>
+          <Text className="bg-[#cad9e8] border border-[#001D39] rounded-full w-24 m-4 p-2">Free Size</Text>
         </View>
         <View className="bg-white mt-4">
           <Text className="text-xl font-bold mt-2 ml-4">Customer Ratings and Reviews</Text>
@@ -31,27 +31,27 @@ const ProductDetail = ({ route }: any) => {
         </View>
         <View className="bg-white mt-4 flex flex-row justify-evenly p-4 ">
           <View className='flex-1 items-center'>
-            <Ionicons name="pricetag" size={24} color="#70184A" /> 
+            <Ionicons name="pricetag" size={24} color="#0A4174" /> 
             <Text>Lowest Prices</Text>
           </View>
           <View className='flex-1 items-center'>
-            <Ionicons name="cash" size={24} color="#70184A"/>
+            <Ionicons name="cash" size={24} color="#0A4174"/>
             <Text>Cash On Delivery</Text>
           </View>
           <View className='flex-1 items-center'>
-            <FontAwesome6 name="box-open" size={24} color="#70184A" />
+            <FontAwesome6 name="box-open" size={24} color="#0A4174" />
             {/* <Ionicons name="" size={24} color="#70184A"/> */}
             <Text>Easy Return</Text>
           </View>
         </View>
         <View className="bg-white mt-4 flex flex-row justify-evenly p-4">
-             <Pressable className="border border-pink-800 rounded-lg py-3 px-4">
+             <Pressable className="border border-[#001D39] rounded-lg py-3 px-4">
           <View className="flex flex-row"> 
-            <Ionicons name="cart" size={24} color="#70184A"/>
-          <Text className="text-xl text-pink-800 ml-2">Add to Cart</Text>
+            <Ionicons name="cart" size={24} color="#0A4174"/>
+          <Text className="text-xl text-[#001D39] ml-2">Add to Cart</Text>
           </View>
         </Pressable>
-        <Pressable className="border border-pink-800 bg-pink-800 py-3 px-4 rounded-lg">
+        <Pressable className="border border-[#001D39] bg-[#001D39] py-3 px-4 rounded-lg">
           <View className="flex flex-row">
           <Entypo name="controller-fast-forward" size={24} color="white" />
             <Text className="text-xl text-white ml-2">Buy Now</Text>

@@ -12,14 +12,14 @@ const Header = () => {
         <View className="flex-row items-center gap-4 ml-6">
         <Image source={{ uri: 'https://plus.unsplash.com/premium_vector-1718370392212-cc9815e7e2c2?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} 
         className='w-10 h-10 rounded-full ml-3' alt='' />
-        <Text className=' font-bold text-pink-900 text-xl'>Shopping</Text>
+        <Text className=' font-bold text-[#001D39] text-xl'>Shopping</Text>
        </View>
        <View className="flex-row items-center gap-4 mr-6">
         <Pressable onPress={()=> (navigation.navigate('Cart'))}>
-       <Ionicons name="cart-outline" size={32} color='black'  />
+       <Ionicons name="cart-outline" size={32} color={'#0A4174'}  />
        </Pressable>
        <Pressable onPress={()=> (navigation.navigate('Wishlist'))}>
-       <Ionicons name="heart-outline" size={32} color='black' />
+       <Ionicons name="heart-outline" size={32} color={'#0A4174'} />
        </Pressable>
       </View>
       </View>
