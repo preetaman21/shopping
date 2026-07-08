@@ -44,7 +44,7 @@ const ToDo = () => {
         
       </View>
       <View className="m-4 rounded-lg border-t border-gray-400 p-4">
-        <Text className="mt-2 text-center text-lg font-bold">Task List</Text>
+        <Text className="mt-2 text-center text-lg font-bold">Task List - </Text>
         <View>
           {todos.length === 0 ? (
             <View>
