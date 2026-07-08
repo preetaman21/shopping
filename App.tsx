@@ -15,6 +15,8 @@ import { Ionicons } from '@expo/vector-icons';
 import Orders from 'screens/Orders';
 import ProductDynamic from 'components/ProductDynamic';
 import { StatusBar } from 'react-native';
+import ToDo from 'screens/ToDo';
+import ToDo2 from 'screens/ToDo2';
 
 const Tab = createBottomTabNavigator()
 const Stack = createNativeStackNavigator()
@@ -46,7 +48,7 @@ export default function App() {
           tabBarActiveTintColor: '#465240',
           tabBarInactiveTintColor: 'black',
         }}>
-          <Tab.Screen component={MyStack} name='Home' options={{tabBarIcon: ({ focused }) => (
+          <Tab.Screen component={MyStack} name='HomeTab' options={{tabBarIcon: ({ focused }) => (
             <Ionicons
               name={focused ? "home" : "home-outline"}
               size={26}
@@ -56,6 +58,20 @@ export default function App() {
           <Tab.Screen component={Orders} name='My Orders' options={{tabBarIcon: ({ focused }) => (
             <Ionicons
               name={focused ? "information-circle" : "information-circle-outline"}
+              size={26}
+              color={focused ? "#0A4174" : "black"} // agro-green-500 : agro-earth-500
+            />
+          )}}/>
+           <Tab.Screen component={ToDo} name='ToDo' options={{tabBarIcon: ({ focused }) => (
+            <Ionicons
+              name={focused ? "book" : "book-outline"}
+              size={26}
+              color={focused ? "#0A4174" : "black"} // agro-green-500 : agro-earth-500
+            />
+          )}}/>
+           <Tab.Screen component={ToDo2} name='ToDo2' options={{tabBarIcon: ({ focused }) => (
+            <Ionicons
+              name={focused ? "book" : "book-outline"}
               size={26}
               color={focused ? "#0A4174" : "black"} // agro-green-500 : agro-earth-500
             />

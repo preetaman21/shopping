@@ -14,7 +14,7 @@ const Product = ({ ListHeaderComponent }: { ListHeaderComponent?: React.ReactEle
         numColumns={2}   
         renderItem={({ item }) => (
           <Pressable className="flex-1 m-2" onPress={() => navigation.navigate('ProductDetail', { product: item })}>
-            <View className="bg-[#DEE6E9] p-2 rounded-xl">
+            <View className="bg-[#d9ddde] p-2 rounded-xl">
               <Text className="text-lg text-[#373d55] font-bold">{item.title}</Text>
 
               <View className="justify-center flex-row bg-white rounded-2xl mt-2">

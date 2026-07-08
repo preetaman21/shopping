@@ -16,7 +16,7 @@ const Profile = () => {
         <Text className=' font-bold text-[#001D39] text-xl'>Amanpreet Kaur</Text>
         </View>
         <View className='flex  flex-row justify-evenly mt-4'>
-          <View className="border border-yellow-300 p-4 rounded-xl items-center">
+          <View className="border border-gray-300 p-4 rounded-xl items-center">
             <Feather name="phone-call" size={24} color="#0A4174" />
             <Text className=" font-bold mt-2 px-4">Help Center</Text>
           </View>
@@ -25,7 +25,7 @@ const Profile = () => {
             <Text className=" font-bold mt-2 px-4">Refer & Earn</Text>
           </View>
         </View>
-        <View>
+        <View className="mt-4 border-t border-gray-300">
           <Text className=" font-bold mt-4 text-lg px-4">My Payments</Text>
           <View className="flex-row items-center gap-4 mt-4 px-4">
             <Entypo name="mobile" size={24} color={'#0A4174'} />
@@ -36,7 +36,7 @@ const Profile = () => {
             <Text className="text-[#526e8f]">Payment & Refund</Text>
           </View>
         </View>
-        <View className="mt-4">
+        <View className="mt-4 border-t border-gray-300">
           <Text className=" font-bold text-lg px-4 ">My Activity</Text>
           <View className="flex-row items-center gap-4 mt-4 px-4">
             <Ionicons name={"language"} size={24} color={"#526e8f"}/>
@@ -55,7 +55,7 @@ const Profile = () => {
             <Text>Followed Shops </Text>
           </View>
         </View>
-        <View>
+        <View className="mt-4 border-t border-gray-300">
           <Text className=" font-bold mt-4 text-lg px-4 ">Others</Text>
           <View className="flex-row items-center gap-4 mt-4 px-4">
             <Ionicons name={"wallet"} size={24} color={"#AEC3B0"}/>
